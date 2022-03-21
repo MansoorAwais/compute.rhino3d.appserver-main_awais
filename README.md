@@ -13,7 +13,7 @@ Use Instructions >>
 
 Go to the following link: https://bim-gear-mechanics.herokuapp.com/examples/gear/ 
 Change the parameters (Number of teeth, Rotation, Gear Depth and Inner Diamter of gear) with sliders 
-After completing the csutomization download teh 3d model file.
+After completing the csutomization download the 3d model file.
 
 Plugins >>>
 Native GH Components

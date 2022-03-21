@@ -1,3 +1,6 @@
+![app_image](https://user-images.githubusercontent.com/57528424/159372046-fd0facff-4b0d-449f-9090-a89ed153046c.JPG)
+
+
 -- GEAR MECAHNICS --
 
 Description >>

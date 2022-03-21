@@ -173,6 +173,26 @@ function init() {
     // very light grey for background, like rhino
     scene.background = new THREE.Color('whitesmoke')
 
+    let material, cubeMap
+
+    // load a pbr material
+    const tl = new THREE.TextureLoader()
+    // tl.setPath('--')
+    material = new THREE.MeshPhysicalMaterial()
+    // material.map          = tl.load('---.png')
+    // material.aoMmap       = tl.load('----.png')
+    // material.normalMap    = tl.load('---.png')
+    // material.metalnessMap = tl.load('---.png')
+    material.metalness = 0.2
+    material.roughness = 0.0
+
+    cubeMap = new THREE.CubeTextureLoader()
+        .setPath('textures/cube/mechanical/')
+        .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] )
+
+    scene.background = cubeMap
+    material.envMap = scene.background
+
     // create the renderer and add it to the html
     renderer = new THREE.WebGLRenderer({ antialias: true })
     renderer.setPixelRatio( window.devicePixelRatio )
